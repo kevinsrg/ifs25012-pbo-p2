@@ -1,0 +1,18 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import adapter.presenter.GuestPresenter;
+import adapter.repository.GuestRepository;
+import framework.view.GuestView;
+import usecase.GuestUseCase;
+
+public class App {
+   public App() {
+   }
+
+   public static void main(String[] var0) {
+      GuestRepository var1 = new GuestRepository();
+      GuestUseCase var2 = new GuestUseCase(var1);
+      GuestPresenter var3 = new GuestPresenter();
+      GuestView var4 = new GuestView(var2, var3);
+      var4.show();
+   }
+}
